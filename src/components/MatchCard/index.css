@@ -1,0 +1,79 @@
+/* Write your CSS here */
+.recent-match-card {
+  background-color: #0f172a;
+  border-radius: 10px;
+  padding: 20px;
+  height: 320px;
+  width: 240px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.opponent-team-logo {
+  margin-top: 15px;
+  height: 90px;
+  width: 80px;
+}
+.first-innings {
+  font-size: 22px;
+  font-family: 'Bree Serif';
+  color: #ffffff;
+}
+.result {
+  font-size: 16px;
+  font-family: 'Bree Serif';
+  color: #ffffff;
+}
+.match-status {
+  font-size: 17px;
+  font-family: 'Bree Serif';
+}
+.statusLost {
+  color: #e31a1a;
+}
+.statusWon {
+  color: #18ed66;
+}
+@media screen and (max-width: 575px) {
+  .recent-match-card {
+    padding: 16px;
+    height: 230px;
+    width: 160px;
+    flex-grow: 1;
+  }
+  .first-innings {
+    font-size: 15px;
+  }
+  .result {
+    font-size: 10px;
+  }
+  .match-status {
+    font-size: 12px;
+  }
+  .opponent-team-logo {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .recent-match-card {
+    padding: 15px;
+    height: 240px;
+    width: 180px;
+  }
+  .opponent-team-logo {
+    height: 70px;
+    width: 60px;
+  }
+  .first-innings {
+    font-size: 17px;
+  }
+  .result {
+    font-size: 12px;
+  }
+  .match-status {
+    font-size: 14px;
+  }
+}

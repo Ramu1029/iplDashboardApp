@@ -1,0 +1,115 @@
+/* Write your CSS here */
+.latest-match-container {
+  margin-top: 14px;
+}
+.latest-match-sub-heading {
+  font-size: 21px;
+  font-family: 'Bree Serif';
+  color: #ffffff;
+}
+.match-details-card {
+  background-color: #1e293b;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.match-details-section {
+  width: 33%;
+}
+.first-innings-heading {
+  font-size: 30px;
+  font-family: 'Bree Serif';
+  color: #ffffff;
+}
+.date {
+  font-size: 20px;
+  font-family: 'Bree Serif';
+  color: #ffffff;
+}
+.venue {
+  font-size: 15px;
+  font-family: 'Bree Serif';
+  color: #ffffff;
+}
+.match-result {
+  font-size: 15px;
+  font-family: 'Bree Serif';
+  color: #ffffff;
+}
+.opponent-team-img {
+  height: 170px;
+  width: 160px;
+  flex-shrink: 0;
+}
+.match-result-section {
+  width: 33%;
+  text-align: right;
+}
+.match-result-section-label {
+  font-size: 19px;
+  font-family: 'Bree Serif';
+  color: #ffffff;
+}
+.label-answer {
+  font-size: 14px;
+  font-family: 'Bree Serif';
+  color: #ffffff;
+}
+.responsive-match-details-container {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  #mediumDevice_matchDetailsSection {
+    display: none;
+  }
+  #mediumDevice_opponentTeamLogo {
+    display: none;
+  }
+  .responsive-match-details-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .responsive-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .match-details-card {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  .separator {
+    margin: 0;
+    width: 100%;
+    border: 2px solid #ffffff;
+  }
+  .match-result-section {
+    text-align: left;
+  }
+  .opponent-team-img {
+    height: 90px;
+    width: 80px;
+    flex-shrink: 1;
+  }
+  .match-details-section {
+    width: 70%;
+  }
+  .first-innings-heading {
+    font-size: 24px;
+  }
+  .date {
+    font-size: 17px;
+  }
+  .venue {
+    font-size: 11px;
+  }
+  .match-result {
+    font-size: 13px;
+  }
+}
