@@ -98,16 +98,13 @@ class TeamMatches extends Component {
 
   render() {
     const {isLoading, teamMatchesDetails, teamBgColor} = this.state
-    const {
-      teamBannerUrl, 
-      filteredLatestMatchDetails, 
-      filteredRecentMatches,
-    } = teamMatchesDetails
-    
+    const {teamBannerUrl, filteredLatestMatchDetails, filteredRecentMatches} =
+      teamMatchesDetails
+
     return (
       <div>
         {isLoading ? (
-          <div data-testid="loader">
+          <div testid="loader">
             <Loader type="TailSpin" color="#00BFFF" height={50} width={50} />
           </div>
         ) : (
